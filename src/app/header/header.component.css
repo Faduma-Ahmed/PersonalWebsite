@@ -1,0 +1,23 @@
+.mat-tab-group.mat-tab-group.mat-primary{
+    align-content:center;
+    align-items: center;
+    transition: none !important;
+}
+.mat-tab-label-active{
+    background-color: #BCA59E;
+}
+.mat-tab-label .mat-tab-label-content-0-0{
+    min-width: 200px;
+}
+.mat-tab-label-0-0{
+    font-size: 100px !important;
+}
+
+.mat-tab-label .mat-tab-label-content{
+   
+    font-family: Montserrat;
+    color:black; opacity: 1.2;
+    position:static;
+    -webkit-transition: none !important;
+    transition: none !important;
+}

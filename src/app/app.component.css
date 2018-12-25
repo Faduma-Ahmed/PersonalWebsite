@@ -1,0 +1,15 @@
+.test{
+    max-width: 1375px;
+    min-height: 100%;
+    margin:0 auto;
+    background-color:rgb(73, 44, 28);opacity: 0.03;
+    z-index: 10;
+
+}
+.within{
+    max-width: 841.94px;
+    min-height: 1000px;
+    margin:0 auto;
+    background-color: white;opacity: 0;
+    z-index: 12;
+}
