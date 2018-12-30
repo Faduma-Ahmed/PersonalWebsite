@@ -15,7 +15,7 @@ export class HeaderComponent implements OnInit {
 
   ngOnInit() {
  
-    this.titleService.setTitle( 'Faduma Ahmed' );
+   // this.titleService.setTitle( 'Faduma Ahmed' );
   }
   
 }

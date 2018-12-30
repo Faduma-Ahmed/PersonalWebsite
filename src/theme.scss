@@ -1,0 +1,82 @@
+@import '~@angular/material/theming';
+
+$general-typography: mat-typography-config(
+  $font-family: '"Montserrat"',
+  $body-2:        mat-typography-level(14px, 24px, 600)  
+);
+@include mat-core($general-typography);
+
+$palette-neutal: (
+    50 : #f4f0ef,
+    100 : #e3dad6,
+    200 : #d0c1bb,
+    300 : #bda89f,
+    400 : #af958b,
+    500 : #a18276,
+    600 : #997a6e,
+    700 : #8f6f63,
+    800 : #856559,
+    900 : #745246,
+    A100 : #ffdcd0,
+    A200 : #ffb69d,
+    A400 : #ff906a,
+    A700 : #ff7d51,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #000000,
+        400 : #000000,
+        500 : #000000,
+        600 : #000000,
+        700 : #ffffff,
+        800 : #ffffff,
+        900 : #ffffff,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #000000,
+        A700 : #000000,
+ ));
+$palette-warn: (
+    50 : #e5e5e5,
+    100 : #bebdbd,
+    200 : #929191,
+    300 : #666565,
+    400 : #464444,
+    500 : #252323,
+    600 : #211f1f,
+    700 : #1b1a1a,
+    800 : #161515,
+    900 : #0d0c0c,
+    A100 : #ff5454,
+    A200 : #ff2121,
+    A400 : #ed0000,
+    A700 : #d40000,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #ffffff,
+        400 : #ffffff,
+        500 : #ffffff,
+        600 : #ffffff,
+        700 : #ffffff,
+        800 : #ffffff,
+        900 : #ffffff,
+        A100 : #000000,
+        A200 : #ffffff,
+        A400 : #ffffff,
+        A700 : #ffffff,
+    )
+);
+$palette-primary: mat-palette($palette-neutal);
+$palette-accent:  mat-palette($palette-neutal);
+
+
+$palette-warn:    mat-palette($palette-neutal);
+
+// Create the theme object (a Sass map containing all of the palettes).
+$website-theme: mat-light-theme($palette-primary, $palette-accent, $palette-warn);
+
+// Include theme styles for core and each component used in your app.
+@include angular-material-theme($website-theme);
