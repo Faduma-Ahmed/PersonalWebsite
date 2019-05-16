@@ -1,12 +1,31 @@
 
-<span class="header">
-<mat-tab-group class="header" mat-align-tabs="center" animationDuration="1500ms">
-    <mat-tab label="FADUMA M. AHMED" > </mat-tab>
-  <mat-tab label="About"> </mat-tab>
-  <mat-tab label="Thoughts"> </mat-tab>
-  <mat-tab label="Projects"> </mat-tab>
-  <mat-tab label="Photos"> </mat-tab>
-</mat-tab-group>
-</span>
+<nav mat-tab-nav-bar>
+<div class= "logo"> <img width="170" height="50"src="assets/images/name.png"></div>
+<div class= "tabs-group">
 
+<a mat-tab-link [disableRipple]="true" routerLinkActive="active" routerLink="/intro">About</a>
+<a mat-tab-link [disableRipple]="true" [matMenuTriggerFor]="menu" routerLinkActive="active" routerLink="/about">Projects</a>
+<mat-menu #menu="matMenu" >
+    <button mat-menu-item (click)="changeTab(2)" >Technology</button>
+    <button mat-menu-item (click)="changeTab(3)">Sumthing</button>
+     <button mat-menu-item (click)="changeTab(4)">Sumthing Else</button>
+  </mat-menu>
+ <a mat-tab-link [disableRipple]="true" justify-self="center">Photos</a>  
+ <a mat-tab-link [disableRipple]="true" justify-self="center">Discussions</a>
+</div>  
 
+<!-- <div class= "contact" >
+    <a mat-tab-link [disableRipple]="true" justify-self="center">Contact</a>  
+</div> -->
+
+ <div class= "search">
+    <i class="fa fa-github fa-lg" ></i>
+    <i class="fa fa-instagram fa-lg" ></i>
+    <i class="fa fa-twitter fa-lg " ></i>
+    <i class="fa fa-search " ></i>
+</div>
+
+    
+<router-outlet></router-outlet>
+
+</nav>

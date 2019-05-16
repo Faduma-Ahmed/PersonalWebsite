@@ -11,7 +11,9 @@ import { Title } from '@angular/platform-browser';
    
 export class HeaderComponent implements OnInit {
   constructor() { }
-  titleService: Title;
+  titleService: Title; // dynamic tabs
+  links = ['About', 'Projects', 'Disscussion', 'Contact'];
+  activeLink = this.links[0];
 
   ngOnInit() {
  

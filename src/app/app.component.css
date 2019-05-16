@@ -1,15 +1,18 @@
 .test{
-    max-width: 1375px;
+    min-width: 1375px;
     min-height: 100%;
     margin:0 auto;
-    background-color:#d0c1bb;opacity: 0.18;
+    background-color:#d0c1bb;opacity: 1;
     z-index: 10;
 
 }
-.within{
-    max-width: 841.94px;
-    min-height: 1000px;
-    margin:0 auto;
-    background-color: #d0c1bb;opacity: 0;
-    z-index: 12;
+html, body, #fullheight {
+    min-height: 100% !important;
+    height: 100%;
+}
+.title {
+    letter-spacing: 3px;
+    font-style: italic;
+    font-weight: 200;
+    text-align: center;
 }

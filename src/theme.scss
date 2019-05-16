@@ -2,7 +2,7 @@
 
 $general-typography: mat-typography-config(
   $font-family: '"Montserrat"',
-  $body-2:        mat-typography-level(14px, 24px, 600)  
+  $body-2:        mat-typography-level(20px, 24px, 600)  
 );
 @include mat-core($general-typography);
 
@@ -73,7 +73,7 @@ $palette-primary: mat-palette($palette-neutal);
 $palette-accent:  mat-palette($palette-neutal);
 
 
-$palette-warn:    mat-palette($palette-neutal);
+$palette-warn:    mat-palette($palette-warn);
 
 // Create the theme object (a Sass map containing all of the palettes).
 $website-theme: mat-light-theme($palette-primary, $palette-accent, $palette-warn);
